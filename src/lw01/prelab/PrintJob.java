@@ -21,6 +21,7 @@ public abstract class PrintJob implements Chargeable {
         return this.pages;
     }
 
+    @Override
     public abstract int calculateCharge();
 
     public int calculateCharge(int copies) {

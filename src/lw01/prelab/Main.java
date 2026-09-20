@@ -1,13 +1,12 @@
 package lw01.prelab;
 
-import java.io.File;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.List;
 
 public class Main {
    public static void main(String[] args) throws Exception {
-      Scanner sc = new Scanner(new File("src/lw01/prelab/jobs.txt"));
+      Scanner sc = new Scanner(Main.class.getResourceAsStream("jobs.txt"));
       List<PrintJob> jobs = new ArrayList<>();
 
       while(sc.hasNextLine()) {

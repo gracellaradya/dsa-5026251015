@@ -6,7 +6,7 @@ public class ColourPrint extends PrintJob {
         super(id, pages);
     }
 
-    // @Override 
+    @Override 
     public int calculateCharge() {
         int pages = getPages();
         int charge = 0;
@@ -19,7 +19,7 @@ public class ColourPrint extends PrintJob {
         return charge + 2000;
     }
 
-    // @Override
+    @Override
     public String label() {
         return "Colour";
     }
