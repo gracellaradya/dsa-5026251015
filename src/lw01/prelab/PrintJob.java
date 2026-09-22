@@ -5,7 +5,7 @@ public abstract class PrintJob implements Chargeable {
     private int pages;
 
     protected PrintJob(String id, int pages) {
-        if (pages < 0) {
+        if (pages <= 0) {
             throw new IllegalArgumentException("Number of pages are not valid");
         }
 

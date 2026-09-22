@@ -9,10 +9,20 @@ public class Main {
       Scanner sc = new Scanner(Main.class.getResourceAsStream("jobs.txt"));
       List<PrintJob> jobs = new ArrayList<>();
 
-      while(sc.hasNextLine()) {
+      while(sc.hasNext()) {
          String type = sc.next();
          String id = sc.next();
          int pages = sc.nextInt();
+
+         // PrintJob job;
+         // if (type.equals("MONO")) {
+         //    job = new MonoPrint(id, pages);
+         // } else if (type.equals("COLOUR")) {
+         //    job = new ColourPrint(id, pages);
+         // }
+
+         // jobs.add(job);
+
          if (type.equals("MONO")) {
             jobs.add(new MonoPrint(id, pages));
          } else if (type.equals("COLOUR")) {
