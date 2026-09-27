@@ -69,7 +69,7 @@ public class Main {
 
             System.out.println("=== Final Balances ===");
             for (String[] cust : customer) {
-                System.out.println(cust[0] + ": " + cust[1]);
+                System.out.println(cust[0] + " : " + cust[1]);
             }
 
             System.out.println();
