@@ -21,7 +21,7 @@ public class Main {
                 washes[i] = new CarWash(id, days);
             }
             
-            int totalCharge = washes[i].calculateCharge(units);
+            washes[i].calculateCharge(units);
         }
 
         for (int i = 0; i < washCount; i++) {
