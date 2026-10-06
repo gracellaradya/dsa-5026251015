@@ -7,3 +7,6 @@ SELL Mouse 25
 ADD Mouse 10
 SELL Keyboard 5
 SELL Monitor 2
+SELL Laptop 20
+ADD Headset 8
+SELL Mouse 3
