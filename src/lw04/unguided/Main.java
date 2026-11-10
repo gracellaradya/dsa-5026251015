@@ -45,10 +45,10 @@ public class Main {
             parcels[i] = sc.nextInt();
         }
 
-        int total = sc.nextInt();
-        int[] target = new int[total];
+        int m = sc.nextInt();
+        int[] target = new int[m];
         
-        for (int i = 0; i < total; i++) {
+        for (int i = 0; i < m; i++) {
             target[i] = sc.nextInt();
         }
 
@@ -82,7 +82,7 @@ public class Main {
         
         System.out.println();
         System.out.println("=== Search Results ===");
-        for (int i = 0; i < total; i++) {
+        for (int i = 0; i < m; i++) {
             binarySearch(parcels, target[i]);
         }
     }
